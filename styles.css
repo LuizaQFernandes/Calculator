@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+}
+
+body{
+    background-color: rgba(210,72,72,1);
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    margin: 10px;
+}
+
+h2{
+    margin: 15px;
+    color: rgba(210,72,72,1);
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-color: rgb(94, 15, 15);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
