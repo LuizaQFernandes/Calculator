@@ -15,23 +15,24 @@
 
   <body>
 
+<div class="container">
         <div class="card">
             <div class="card-header text-center">
                 <h2>Calculadora <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 2h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm1 2v16h14V4H5zm2 2h10v4H7V6zm0 6h2v2H7v-2zm0 4h2v2H7v-2zm4-4h2v2h-2v-2zm0 4h2v2h-2v-2zm4-4h2v6h-2v-6z" fill="rgba(210,72,72,1)"/></svg></h2>
             </div>
             <div class="card-body">
                 <div class="row justify-content-center">
-                    <div class="col-md-10 text-center" >
+                    <div class="col-md-11 text-center" >
                         
                         <div class="row">
                         1° Número <input type="number" class="form-control" id="num1"/>
                         2° Número <input type="number" class="form-control" id="num2"/>
                         </div>
         
-                        <button class="btn btn-danger" onClick="soma()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Somar</button>
-                        <button class="btn btn-danger" onClick="sub()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Subtrair</button>
-                        <button class="btn btn-danger" onClick="multi()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Multiplicar</button>
-                        <button class="btn btn-danger" onClick="div()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Dividir</button>
+                        <button class="btn btn-danger count " onClick="soma()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Somar</button>
+                        <button class="btn btn-danger count " onClick="sub()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Subtrair</button>
+                        <button class="btn btn-danger count " onClick="multi()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Multiplicar</button>
+                        <button class="btn btn-danger count " onClick="div()"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="rgba(255,255,255,1)"/></svg> Dividir</button>
                         
                         <div class="row">
                             Resultado <input type="number" class="form-control" id="resp" readonly/>
@@ -40,6 +41,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center" >
+                <p>
+                    <button class="btn btn-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Histórico
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                    Histórico de contas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 
     <script>
         //soma
