@@ -51,7 +51,7 @@
                 </p>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
-                    Histórico de contas
+                    Histórico de contas  <input type="text" class="form-control" id="hist" readonly/>
                     </div>
                 </div>
             </div>
@@ -65,8 +65,10 @@
             let num1 = parseFloat(document.getElementById("num1").value);
             let num2 = parseFloat(document.getElementById("num2").value);
             let soma = num1 + num2;
-
+                       
             document.getElementById("resp").value = soma;
+
+            document.getElementById("hist").value = ( num1 + ' + ' + num2 + ' = ' + soma);
         }
 
         //sub
@@ -77,6 +79,9 @@
             let sub = num1 - num2;
 
             document.getElementById("resp").value = sub;
+
+            document.getElementById("hist").value = ( num1 + ' - ' + num2 + ' = ' + sub);
+
         }
 
         //multi
@@ -87,6 +92,8 @@
             let multi = num1 * num2;
 
             document.getElementById("resp").value = multi;
+
+            document.getElementById("hist").value = ( num1 + ' X ' + num2 + ' = ' + multi);
         }
 
         //div
@@ -96,7 +103,16 @@
             let num2 = parseFloat(document.getElementById("num2").value);
             let div = num1 / num2;
 
-            document.getElementById("resp").value = div;
+            if(num2 === 0){
+                document.getElementById('num2').value = '';
+                alert('Não é possível dividir por 0');                
+            }
+            else{
+                
+                document.getElementById("resp").value = div;
+                document.getElementById("hist").value = ( num1 + ' / ' + num2 + ' = ' + div);
+            }
+        
         }
         
     </script>
