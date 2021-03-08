@@ -1,6 +1,6 @@
 *{
     font-family: 'Karla', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0;
     border: 0;
 }
@@ -20,7 +20,7 @@ h2{
 }
 
 .container{
-    width: 46%;
+    width: 43%;
 }
 
 .card{
@@ -40,5 +40,6 @@ h2{
   .container
    {
      width: 100%;
+
    }
 }
