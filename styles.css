@@ -30,16 +30,14 @@ h2{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
 .count{
     margin: 5px;
 }
 
-@media (max-width: 800px)
+@media (max-width: 900px)
 {
   .container
    {
      width: 100%;
-
    }
 }

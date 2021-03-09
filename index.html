@@ -51,7 +51,7 @@
                 </p>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">
-                    Histórico de contas  <input type="text" class="form-control" id="hist" readonly/>
+                        <div id="hist" ></div>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                        
             document.getElementById("resp").value = soma;
 
-            document.getElementById("hist").value = ( num1 + ' + ' + num2 + ' = ' + soma);
+            document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + soma + "</div>";
         }
 
         //sub
@@ -80,8 +80,8 @@
 
             document.getElementById("resp").value = sub;
 
-            document.getElementById("hist").value = ( num1 + ' - ' + num2 + ' = ' + sub);
-
+            document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + sub + "</div>";
+            
         }
 
         //multi
@@ -93,7 +93,8 @@
 
             document.getElementById("resp").value = multi;
 
-            document.getElementById("hist").value = ( num1 + ' X ' + num2 + ' = ' + multi);
+            document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + multi + "</div>";
+            
         }
 
         //div
@@ -110,7 +111,7 @@
             else{
                 
                 document.getElementById("resp").value = div;
-                document.getElementById("hist").value = ( num1 + ' / ' + num2 + ' = ' + div);
+                document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + div + "</div>";
             }
         
         }
