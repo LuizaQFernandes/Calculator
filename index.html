@@ -68,7 +68,7 @@
                        
             document.getElementById("resp").value = soma;
 
-            document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + soma + "</div>";
+            document.getElementById("hist").innerHTML +=  `<div class='alert alert-secondary'> ${num1} + ${num2} = ${soma} </div>`;  //template strings
         }
 
         //sub
@@ -80,8 +80,7 @@
 
             document.getElementById("resp").value = sub;
 
-            document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + sub + "</div>";
-            
+            document.getElementById("hist").innerHTML +=  `<div class='alert alert-secondary'> ${num1} + ${num2} = ${sub} </div>`;  
         }
 
         //multi
@@ -92,9 +91,7 @@
             let multi = num1 * num2;
 
             document.getElementById("resp").value = multi;
-
-            document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + multi + "</div>";
-            
+            document.getElementById("hist").innerHTML +=  `<div class='alert alert-secondary'> ${num1} + ${num2} = ${multi} </div>`;  
         }
 
         //div
@@ -111,7 +108,7 @@
             else{
                 
                 document.getElementById("resp").value = div;
-                document.getElementById("hist").innerHTML +=  "<div class='alert alert-secondary'>"+ num1 + ' - ' + num2 + ' = ' + div + "</div>";
+                document.getElementById("hist").innerHTML +=  `<div class='alert alert-secondary'> ${num1} + ${num2} = ${div} </div>`;  
             }
         
         }
