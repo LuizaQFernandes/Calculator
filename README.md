@@ -1,8 +1,10 @@
 ## Calculator
 
-Calculador - Project Fatec Itu
+Calculador - Project Fatec Itu :computer: :page_with_curl:
 
-Make simple math using this calculator developed with HTML, CSS and using the BootStrap components ;)
+Make simple math using this calculator developed with HTML, CSS and using the BootStrap components :purple_heart:
+
+You can keep track of your results accessing the result history :flushed::question:
 
 ## Layout
 
